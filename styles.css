@@ -1,6 +1,7 @@
-* {
+html {
     box-sizing: border-box;
     margin: 1.5em;
+    scroll-behavior: smooth;
 }
 
 code {
@@ -10,5 +11,42 @@ code {
     padding: 0 3px;
     color: black;
     display: block;
-    white-space: pre-wrap
+    white-space: pre-wrap;
+    text-align: left;
 }
+
+nav ul li {
+    list-style-type: none;
+    border: 1px solid #000;
+
+}
+#navbar {
+    position: fixed;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    border: 1px solid #000;
+
+}
+
+#navbar ul{
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+main {
+    float: right;
+    margin-left: 25%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        position: absolute;
+    }
+
+    main {
+        position: relative;
+    }
